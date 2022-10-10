@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    git.scc.kit.edu/m-team/flaat:
+      branch: master
+      repo: https://git.scc.kit.edu/m-team/flaat
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.4
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      git.scc.kit.edu/m-team/flaat git:
+        commands:
+        - /usr/bin/env sh .sqa/script.nippy-eggplant-clam.sh
+        container: qc.acc_skanky-tan-dollar
+  QC.Doc:
+    repos:
+      git.scc.kit.edu/m-team/flaat find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-chocolate-ant.sh
+        container: qc.doc_squeaky-lavender-albatross
+      git.scc.kit.edu/m-team/flaat git:
+        commands:
+        - /usr/bin/env sh .sqa/script.hazy-puce-mayfly.sh
+        container: qc.doc_gloppy-ivory-falcon
+      git.scc.kit.edu/m-team/flaat markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.freaky-aqua-affenpinscher.sh
+        container: qc.doc_snoopy-ultramarine-goose
+      git.scc.kit.edu/m-team/flaat restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-cinnabar-hummingbird.sh
+        container: qc.doc_sloppy-olive-centipede
+  QC.Lic:
+    repos:
+      git.scc.kit.edu/m-team/flaat licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-alizarin-pinscher.sh
+        container: qc.lic_pretty-vermilion-eel
+  QC.Sec:
+    repos:
+      git.scc.kit.edu/m-team/flaat bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-malachite-hippopotamus.sh
+        container: qc.sec_chummy-dandelion-zebra
+  QC.Sty:
+    repos:
+      git.scc.kit.edu/m-team/flaat flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.crappy-turquoise-panda.sh
+        container: qc.sty_slimy-apricot-tarsier
+  QC.Ver:
+    repos:
+      git.scc.kit.edu/m-team/flaat get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-salmon-wrasse.sh
+        container: qc.ver_cheeky-ivory-ragdoll
+timeout: 1800
