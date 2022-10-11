@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       git.scc.kit.edu/m-team/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-eggplant-clam.sh
-        container: qc.acc_skanky-tan-dollar
+        - /usr/bin/env sh .sqa/script.muzzy-dandelion-butterfly.sh
+        container: qc.acc_paltry-charcoal-zebu
   QC.Doc:
     repos:
       git.scc.kit.edu/m-team/flaat find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-chocolate-ant.sh
-        container: qc.doc_squeaky-lavender-albatross
+        - /usr/bin/env sh .sqa/script.slaphappy-sangria-lemming.sh
+        container: qc.doc_goopy-aquamarine-squirt
       git.scc.kit.edu/m-team/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-puce-mayfly.sh
-        container: qc.doc_gloppy-ivory-falcon
+        - /usr/bin/env sh .sqa/script.nippy-eggplant-squid.sh
+        container: qc.doc_shaky-silver-spitz
       git.scc.kit.edu/m-team/flaat markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-aqua-affenpinscher.sh
-        container: qc.doc_snoopy-ultramarine-goose
+        - /usr/bin/env sh .sqa/script.pokey-white-stingray.sh
+        container: qc.doc_blurry-xanthic-malamute
       git.scc.kit.edu/m-team/flaat restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-cinnabar-hummingbird.sh
-        container: qc.doc_sloppy-olive-centipede
+        - /usr/bin/env sh .sqa/script.wimpy-eggplant-dragon.sh
+        container: qc.doc_clammy-carmine-mayfly
   QC.Lic:
     repos:
       git.scc.kit.edu/m-team/flaat licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-alizarin-pinscher.sh
-        container: qc.lic_pretty-vermilion-eel
+        - /usr/bin/env sh .sqa/script.beady-rose-dragon.sh
+        container: qc.lic_goopy-cyan-bulldog
   QC.Sec:
     repos:
       git.scc.kit.edu/m-team/flaat bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-malachite-hippopotamus.sh
-        container: qc.sec_chummy-dandelion-zebra
+        - /usr/bin/env sh .sqa/script.stealthy-champagne-gecko.sh
+        container: qc.sec_scummy-fuchsia-wrasse
   QC.Sty:
     repos:
       git.scc.kit.edu/m-team/flaat flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-turquoise-panda.sh
-        container: qc.sty_slimy-apricot-tarsier
+        - /usr/bin/env sh .sqa/script.fuzzy-periwinkle-owl.sh
+        container: qc.sty_skinny-goldenrod-bullfrog
   QC.Ver:
     repos:
       git.scc.kit.edu/m-team/flaat get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-salmon-wrasse.sh
-        container: qc.ver_cheeky-ivory-ragdoll
+        - /usr/bin/env sh .sqa/script.cloudy-tangerine-dachshund.sh
+        container: qc.ver_snazzy-mustard-maltese
 timeout: 1800
