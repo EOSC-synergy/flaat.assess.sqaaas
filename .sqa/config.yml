@@ -1,62 +1,62 @@
 config:
   credentials: []
   project_repos:
-    git.scc.kit.edu/m-team/flaat:
-      branch: master
-      repo: https://git.scc.kit.edu/m-team/flaat
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.4
+      branch: release/1.7.9
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/indigo-dc/flaat:
+      branch: master
+      repo: https://github.com/indigo-dc/flaat
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      git.scc.kit.edu/m-team/flaat git:
+      github.com/indigo-dc/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-dandelion-butterfly.sh
-        container: qc.acc_paltry-charcoal-zebu
+        - /usr/bin/env sh .sqa/script.skinny-green-bulldog.sh
+        container: qc.acc_grumpy-chestnut-skunk
   QC.Doc:
     repos:
-      git.scc.kit.edu/m-team/flaat find_doc_files.py:
+      github.com/indigo-dc/flaat find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-sangria-lemming.sh
-        container: qc.doc_goopy-aquamarine-squirt
-      git.scc.kit.edu/m-team/flaat git:
+        - /usr/bin/env sh .sqa/script.snappy-ruby-mandrill.sh
+        container: qc.doc_gloppy-aquamarine-kakapo
+      github.com/indigo-dc/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-eggplant-squid.sh
-        container: qc.doc_shaky-silver-spitz
-      git.scc.kit.edu/m-team/flaat markdownlint:
+        - /usr/bin/env sh .sqa/script.gimpy-mauve-robin.sh
+        container: qc.doc_whiny-mustard-mammoth
+      github.com/indigo-dc/flaat markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-white-stingray.sh
-        container: qc.doc_blurry-xanthic-malamute
-      git.scc.kit.edu/m-team/flaat restructuredtext-lint:
+        - /usr/bin/env sh .sqa/script.wiggy-viridian-newfoundland.sh
+        container: qc.doc_snappy-gamboge-dane
+      github.com/indigo-dc/flaat restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-eggplant-dragon.sh
-        container: qc.doc_clammy-carmine-mayfly
+        - /usr/bin/env sh .sqa/script.wiggy-linen-frise.sh
+        container: qc.doc_tacky-celadon-gopher
   QC.Lic:
     repos:
-      git.scc.kit.edu/m-team/flaat licensee:
+      github.com/indigo-dc/flaat licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-rose-dragon.sh
-        container: qc.lic_goopy-cyan-bulldog
+        - /usr/bin/env sh .sqa/script.freaky-wheat-orangutan.sh
+        container: qc.lic_silly-cinnamon-akita
   QC.Sec:
     repos:
-      git.scc.kit.edu/m-team/flaat bandit:
+      github.com/indigo-dc/flaat bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-champagne-gecko.sh
-        container: qc.sec_scummy-fuchsia-wrasse
+        - /usr/bin/env sh .sqa/script.smelly-gamboge-fossa.sh
+        container: qc.sec_scanty-salmon-flamingo
   QC.Sty:
     repos:
-      git.scc.kit.edu/m-team/flaat flake8:
+      github.com/indigo-dc/flaat flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-periwinkle-owl.sh
-        container: qc.sty_skinny-goldenrod-bullfrog
+        - /usr/bin/env sh .sqa/script.skimpy-thistle-moth.sh
+        container: qc.sty_blurry-pear-toucan
   QC.Ver:
     repos:
-      git.scc.kit.edu/m-team/flaat get_git_tags.py:
+      github.com/indigo-dc/flaat get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-tangerine-dachshund.sh
-        container: qc.ver_snazzy-mustard-maltese
-timeout: 1800
+        - /usr/bin/env sh .sqa/script.crabby-vermilion-cassowary.sh
+        container: qc.ver_baggy-ochre-guppy
+timeout: 5400
