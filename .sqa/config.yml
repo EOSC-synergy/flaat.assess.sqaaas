@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/indigo-dc/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-green-bulldog.sh
-        container: qc.acc_grumpy-chestnut-skunk
+        - /usr/bin/env sh .sqa/script.craggy-razzmatazz-mist.sh
+        container: qc.acc_homely-amber-donkey
   QC.Doc:
     repos:
       github.com/indigo-dc/flaat find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-ruby-mandrill.sh
-        container: qc.doc_gloppy-aquamarine-kakapo
+        - /usr/bin/env sh .sqa/script.silly-teal-newt.sh
+        container: qc.doc_scummy-sapphire-snail
       github.com/indigo-dc/flaat git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-mauve-robin.sh
-        container: qc.doc_whiny-mustard-mammoth
+        - /usr/bin/env sh .sqa/script.cranky-lime-argentino.sh
+        container: qc.doc_cozy-olivine-frog
       github.com/indigo-dc/flaat markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-viridian-newfoundland.sh
-        container: qc.doc_snappy-gamboge-dane
+        - /usr/bin/env sh .sqa/script.woozy-wheat-corgi.sh
+        container: qc.doc_trippy-platinum-dane
       github.com/indigo-dc/flaat restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-linen-frise.sh
-        container: qc.doc_tacky-celadon-gopher
+        - /usr/bin/env sh .sqa/script.wiggy-jade-chin.sh
+        container: qc.doc_sleepy-grey-angelfish
   QC.Lic:
     repos:
       github.com/indigo-dc/flaat licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-wheat-orangutan.sh
-        container: qc.lic_silly-cinnamon-akita
+        - /usr/bin/env sh .sqa/script.sloppy-beige-vulture.sh
+        container: qc.lic_grumpy-lime-chinchilla
   QC.Sec:
     repos:
       github.com/indigo-dc/flaat bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-gamboge-fossa.sh
-        container: qc.sec_scanty-salmon-flamingo
+        - /usr/bin/env sh .sqa/script.shabby-sangria-squirt.sh
+        container: qc.sec_slimy-zucchini-spitz
   QC.Sty:
     repos:
       github.com/indigo-dc/flaat flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-thistle-moth.sh
-        container: qc.sty_blurry-pear-toucan
+        - /usr/bin/env sh .sqa/script.bumpy-brown-leopard.sh
+        container: qc.sty_squirrely-harlequin-snake
   QC.Ver:
     repos:
       github.com/indigo-dc/flaat get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-vermilion-cassowary.sh
-        container: qc.ver_baggy-ochre-guppy
+        - /usr/bin/env sh .sqa/script.cloudy-lilac-vulture.sh
+        container: qc.ver_whiny-amber-hornet
 timeout: 5400
